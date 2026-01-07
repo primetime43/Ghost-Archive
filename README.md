@@ -15,11 +15,18 @@ I recently came across GhostArchive while searching for an alternative to the ot
 
 ## Installation
 
-### Chrome / Edge (Manual)
+### Chrome / Edge / Brave / Opera / Vivaldi (Manual)
+
+The `Chrome` folder works with all Chromium-based browsers.
 
 1. Download or clone this repository
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
+2. Open your browser's extension page:
+   - Chrome: `chrome://extensions/`
+   - Edge: `edge://extensions/`
+   - Brave: `brave://extensions/`
+   - Opera: `opera://extensions/`
+   - Vivaldi: `vivaldi://extensions/`
+3. Enable "Developer mode" (usually top right corner)
 4. Click "Load unpacked" and select the `Chrome` folder
 
 ## Usage
