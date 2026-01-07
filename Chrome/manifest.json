@@ -1,0 +1,52 @@
+{
+  "name": "Ghost Archive",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Archive and search webpages with GhostArchive.org",
+  "homepage_url": "https://github.com/primetime43/Ghost-Archive",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png"
+    },
+    "default_title": "Ghost Archive",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://ghostarchive.org/*"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "commands": {
+    "archive-page": {
+      "suggested_key": {
+        "default": "Alt+Shift+A"
+      },
+      "description": "Archive current page with GhostArchive"
+    },
+    "search-page": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Search GhostArchive for current page"
+    }
+  }
+}
